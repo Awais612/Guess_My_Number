@@ -10,7 +10,7 @@
 // console.log(document.querySelector(".guess").value);
 // Generating the random number for the guess between the 1 and 20
 
-const random_guess_number = Math.trunc(Math.random() * 20) + 1;
+let random_guess_number = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 // console.log(score);
 
@@ -52,7 +52,7 @@ document.querySelector(".again").addEventListener("click", function () {
   let score = 20;
 
   document.querySelector(".score").textContent = score;
-  const random_guess_number = Math.trunc(Math.random() * 20) + 1;
+  random_guess_number = Math.trunc(Math.random() * 20) + 1;
   document.querySelector(".message").textContent = "Start Guessing";
   document.querySelector(".guess").value = "";
   document.querySelector(".number").textContent = "?";
